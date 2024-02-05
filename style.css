@@ -1,0 +1,93 @@
+/* CSS Reset */
+@import url('./reset.css');
+
+/* General setup */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
+:root {
+  --default-font: 'Poppins', sans-serif;
+  --primary-color: #2374EE;
+  --hero-bg-color: #EBF2FF;
+}
+
+* {
+  font-family: var(--default-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border-radius: 25px;
+  border: none;
+  padding: 1rem 2rem;
+  background: transparent;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.button--primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Hero styles */
+.hero__top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem 0;
+  background-color: var(--hero-bg-color);
+}
+
+.hero__top h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+.hero__content {
+  display: grid;
+  gap: 2rem;
+  padding: 5rem 0 5rem 5rem;
+}
+
+.hero__image {
+  grid-column: span 2 / span 2;
+  position: relative;
+}
+
+.hero__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 1rem;
+}
